@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>EMI Calculator</h1>
+    <div class="emi-wrapper">
+        <div class="input">
+            <div class="group">
+                <label for="amnt">Amount</label>
+                <input type="text" id="amnt" name="amnt">
+            </div>
+            <div class="group">
+                <label for="interestR">Interest Rate per annum</label>
+                <input type="text" id="interestR" name="interestR">
+            </div>
+            <div class="group">
+                <label for="time">Loan Tenure in months</label>
+                <input type="text" id="time" name="time">
+            </div>
+            <button onclick="calculate()">Submit</button>
+        </div>
+        <hr>
+        <div class="results" id="results">
+            <div class="result-group">
+                <p id="about">EMI: <span id="emi"></span></p>
+            </div>
+            <div class="result-group">
+                <p id="about">Interest Payable: <span id="interest"></span></p>
+            </div>
+            <div class="result-group">
+                <p id="about">Total Payment: <span id="total"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
